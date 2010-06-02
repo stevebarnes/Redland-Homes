@@ -1,0 +1,72 @@
+- title "Lead"
+
+%p
+  %strong First Name:
+  =h @lead.first_name
+%p
+  %strong Last Name:
+  =h @lead.last_name
+%p
+  %strong Street:
+  =h @lead.street
+%p
+  %strong Suburb:
+  =h @lead.suburb
+%p
+  %strong Postcode:
+  =h @lead.postcode
+%p
+  %strong Phone:
+  =h @lead.phone
+%p
+  %strong Mobile:
+  =h @lead.mobile
+%p
+  %strong Email Address:
+  =h @lead.email_address
+%p
+  %strong Q Vp:
+  =h @lead.q_vp
+%p
+  %strong Q Rb:
+  =h @lead.q_rb
+%p
+  %strong Q Tl:
+  =h @lead.q_tl
+%p
+  %strong Q Cl:
+  =h @lead.q_cl
+%p
+  %strong Q Mc:
+  =h @lead.q_mc
+%p
+  %strong Q Bd:
+  =h @lead.q_bd
+%p
+  %strong Q C:
+  =h @lead.q_c
+%p
+  %strong Q Ah:
+  =h @lead.q_ah
+%p
+  %strong Other:
+  =h @lead.other
+%p
+  %strong Beds:
+  =h @lead.beds
+%p
+  %strong Baths:
+  =h @lead.baths
+%p
+  %strong Garages:
+  =h @lead.garages
+%p
+  %strong Comments:
+  =h @lead.comments
+
+%p
+  = link_to "Edit", edit_lead_path(@lead)
+  |
+  = link_to "Destroy", @lead, :confirm => 'Are you sure?', :method => :delete
+  |
+  = link_to "View All", leads_path

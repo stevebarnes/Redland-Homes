@@ -1,0 +1,45 @@
+one:
+  first_name: MyString
+  last_name: MyString
+  street: MyString
+  suburb: MyString
+  postcode: MyString
+  phone: MyString
+  mobile: MyString
+  email_address: MyString
+  q_vp: false
+  q_rb: false
+  q_tl: false
+  q_cl: false
+  q_mc: false
+  q_bd: false
+  q_c: false
+  q_ah: false
+  other: MyString
+  beds: 1
+  baths: 1
+  garages: 1
+  comments: MyString
+
+two:
+  first_name: MyString
+  last_name: MyString
+  street: MyString
+  suburb: MyString
+  postcode: MyString
+  phone: MyString
+  mobile: MyString
+  email_address: MyString
+  q_vp: false
+  q_rb: false
+  q_tl: false
+  q_cl: false
+  q_mc: false
+  q_bd: false
+  q_c: false
+  q_ah: false
+  other: MyString
+  beds: 1
+  baths: 1
+  garages: 1
+  comments: MyString

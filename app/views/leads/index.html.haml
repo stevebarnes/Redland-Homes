@@ -1,0 +1,50 @@
+%table
+  %tr
+    %th First name
+    %th Last name
+    %th Street
+    %th Suburb
+    %th Postcode
+    %th Mobile
+    %th Email address
+    %th Q vp
+    %th Q rb
+    %th Q tl
+    %th Q cl
+    %th Q mc
+    %th Q bd
+    %th Q c
+    %th Q ah
+    %th Other
+    %th Beds
+    %th Baths
+    %th Garages
+    %th Comments
+  - for lead in @leads
+    %tr
+      %td= h lead.first_name
+      %td= h lead.last_name
+      %td= h lead.street
+      %td= h lead.suburb
+      %td= h lead.postcode
+      %td= h lead.phone
+      %td= h lead.mobile
+      %td= h lead.email_address
+      %td= h lead.q_vp
+      %td= h lead.q_rb
+      %td= h lead.q_tl
+      %td= h lead.q_cl
+      %td= h lead.q_mc
+      %td= h lead.q_bd
+      %td= h lead.q_c
+      %td= h lead.q_ah
+      %td= h lead.other
+      %td= h lead.beds
+      %td= h lead.baths
+      %td= h lead.garages
+      %td= h lead.comments
+      %td= link_to 'Show', lead
+      %td= link_to 'Edit', edit_lead_path(lead)
+      %td= link_to 'Destroy', lead, :confirm => 'Are you sure?', :method => :delete
+
+%p= link_to "New Lead", new_lead_path

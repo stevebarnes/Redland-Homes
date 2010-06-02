@@ -1,0 +1,93 @@
+- form_for @lead do |f|
+  %div#flash
+    = f.error_messages
+  %div#name-row
+    %div#top-dtls-left
+      %div
+        = f.label "First Name: "
+        = f.text_field :first_name
+    %div#top-dtls-right
+      %div
+        = f.label "Last Name: "
+        = f.text_field :last_name
+    %div#top-dtls-left
+      %div#street
+        = f.label :street
+        %br
+        = f.text_field :street
+    %div#top-dtls-right
+      %div
+        = f.label :phone
+        %br
+        = f.text_field :phone
+
+    %div#top-dtls-left
+      %div
+        = f.label :mobile
+        %br
+        = f.text_field :mobile
+    %div#top-dtls-right
+      %div
+        = f.label :email_address
+        %br
+        = f.text_field :email_address
+  %div#suburbs
+    %div#suburbs-left-a
+      %div
+        = f.radio_button :suburb, "Wellington Point"
+        = f.label "Wellington Point"
+      %div
+        = f.radio_button :suburb, "Redland Bay"
+        = f.label "Redland Bay"
+      %div
+        = f.radio_button :suburb, "Thornlands"
+        = f.label "Thornlands"
+      %div#other
+        = f.label :other
+        = f.text_field :other, :size=>13
+    %div#suburbs-right-a
+      %div#suburbs-left-b
+        %div
+          = f.radio_button :suburb, "Cleveland"
+          = f.label "Cleveland"
+        %div
+          = f.radio_button :suburb, "Mount Cotton"
+          = f.label "Mount Cotton"
+        %div
+          = f.radio_button :suburb, "Birkdale"
+          = f.label "Birkdale"
+      %div#suburbs-left-b
+        %div
+          = f.radio_button :suburb, "Capalaba"
+          = f.label "Capalaba"
+        %div
+          = f.radio_button :suburb, "Alexandra Hills"
+          = f.label "Alexandra Hills"
+        %div
+          = f.radio_button :suburb, "Victoria Point"
+          = f.label "Victoria Point"
+  %div#bbg
+    %div#bbg-left-a
+      %div#beds
+        = f.label :beds
+        = f.select :beds, [[1,1],[2,2],[3,3],[4,4],["5+", 5]]
+        = # f.text_field :beds, :size=>2
+    %div#bbg-right-a
+      %div#bbg-left-b
+        %div#baths
+          = f.label :baths
+          = f.select :baths, [[1,1],[2,2],[3,3],[4,4],["5+", 5]]
+          = # f.text_field :baths, :size=>2
+      %div#bbg-left-b
+        %div#garages
+          = f.label :garages
+          = f.select :garages, [[1,1],[2,2],[3,3],[4,4],["5+", 5]]
+          = # f.text_field :garages, :size=>2
+  %div#bottom
+    %div#comments
+      = f.label :comments
+      = f.text_area :comments, :rows=>2, :cols=>36
+    %div#submit
+      %br
+      %br
+      %button{type => "submit", :value => "OK", :id => "lead_submit"}
